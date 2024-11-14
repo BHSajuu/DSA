@@ -37,7 +37,7 @@ public class Prims_Algorithm {
 
     public static void prim(ArrayList<Edge>[] graph){
         boolean visit[]= new boolean[graph.length];
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[1]-b[1]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->a[1]-b[1]);  // it store the destination node with the edge weight
         pq.add(new int[]{0,0});
         int final_cost =0;
         while (!pq.isEmpty()) {
